@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\ivanm\source\repos\primjer_ispita6\primjer_ispita6\Source.c(258): warning C4715: 'findElement': not all control paths return a value
+  primjer_ispita6.vcxproj -> C:\Users\ivanm\source\repos\primjer_ispita6\x64\Debug\primjer_ispita6.exe

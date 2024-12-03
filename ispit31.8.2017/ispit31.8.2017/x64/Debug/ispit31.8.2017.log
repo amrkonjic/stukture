@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\ivanm\source\repos\ispit31.8.2017\ispit31.8.2017\Source.c(217,11): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  ispit31.8.2017.vcxproj -> C:\Users\ivanm\source\repos\ispit31.8.2017\x64\Debug\ispit31.8.2017.exe

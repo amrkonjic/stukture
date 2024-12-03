@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "primjer_ispita3", "primjer_ispita3\primjer_ispita3.vcxproj", "{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Debug|x64.ActiveCfg = Debug|x64
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Debug|x64.Build.0 = Debug|x64
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Debug|x86.ActiveCfg = Debug|Win32
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Debug|x86.Build.0 = Debug|Win32
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Release|x64.ActiveCfg = Release|x64
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Release|x64.Build.0 = Release|x64
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Release|x86.ActiveCfg = Release|Win32
+		{C15E2693-AF9A-4504-A4F0-2BD2E1B0863F}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D0CF7E48-AF59-45F9-BF6C-2A9B2E9F7150}
+	EndGlobalSection
+EndGlobal

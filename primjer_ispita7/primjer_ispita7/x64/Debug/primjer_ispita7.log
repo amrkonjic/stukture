@@ -1,0 +1,3 @@
+﻿  Source.c
+C:\Users\ivanm\source\repos\primjer_ispita7\primjer_ispita7\Source.c(40,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+  primjer_ispita7.vcxproj -> C:\Users\ivanm\source\repos\primjer_ispita7\x64\Debug\primjer_ispita7.exe

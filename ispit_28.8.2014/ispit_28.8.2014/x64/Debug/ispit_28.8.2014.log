@@ -1,0 +1,6 @@
+﻿  Source.c
+C:\Users\ivanm\source\repos\ispit_28.8.2014\ispit_28.8.2014\Source.c(123,26): warning C4028: formal parameter 1 different from declaration
+C:\Users\ivanm\source\repos\ispit_28.8.2014\ispit_28.8.2014\Source.c(136,133): warning C4133: '=': incompatible types - from 'studentT' to 'studentP'
+C:\Users\ivanm\source\repos\ispit_28.8.2014\ispit_28.8.2014\Source.c(137,26): warning C4133: 'function': incompatible types - from 'studentP' to 'studentT'
+C:\Users\ivanm\source\repos\ispit_28.8.2014\ispit_28.8.2014\Source.c(137,29): warning C4133: 'function': incompatible types - from 'studentP' to 'studentT'
+  ispit_28.8.2014.vcxproj -> C:\Users\ivanm\source\repos\ispit_28.8.2014\x64\Debug\ispit_28.8.2014.exe

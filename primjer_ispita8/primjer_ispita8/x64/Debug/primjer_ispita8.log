@@ -1,0 +1,6 @@
+﻿  Source.c
+C:\Users\ivanm\source\repos\primjer_ispita8\primjer_ispita8\Source.c(19,1): warning C4005: 'MAX': macro redefinition
+C:\Users\ivanm\source\repos\primjer_ispita8\primjer_ispita8\Source.c(17): message : see previous definition of 'MAX'
+C:\Users\ivanm\source\repos\primjer_ispita8\primjer_ispita8\Source.c(41,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\ivanm\source\repos\primjer_ispita8\primjer_ispita8\Source.c(137): warning C4715: 'findElement': not all control paths return a value
+  primjer_ispita8.vcxproj -> C:\Users\ivanm\source\repos\primjer_ispita8\x64\Debug\primjer_ispita8.exe

@@ -1,0 +1,4 @@
+﻿  Source.c
+C:\Users\ivanm\source\repos\primjer_ispita4\primjer_ispita4\Source.c(217,8): warning C4244: 'function': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\ivanm\source\repos\primjer_ispita4\primjer_ispita4\Source.c(228,11): warning C4553: '==': result of expression not used; did you intend '='?
+  primjer_ispita4.vcxproj -> C:\Users\ivanm\source\repos\primjer_ispita4\x64\Debug\primjer_ispita4.exe

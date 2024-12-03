@@ -1,0 +1,4 @@
+dm120 diskretna
+oop110 objektno
+sp240 strukture
+alg113 algoritnmi

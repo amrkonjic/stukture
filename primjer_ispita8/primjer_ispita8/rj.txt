@@ -1,0 +1,151 @@
+/*Napisati program kojim se
+a) Sluèajnim uzorkom generira 100 brojeva iz opsega od 300 do 700, te ih sprema u binarno stablo
+pretraživanja. Zatim ispišemo to stablo u preorder naèinu ispisa.
+b) Iz generiranog stabla pretraživanja izbrisati sve elemente koji su zapisani u proizvoljno
+definiranoj datoteci.*/
+						
+						// OVOE MONIKA RJESILA I RADI VALJA
+
+#define _CRT_SECURE_NO_WARNINGS
+#include<stdio.h>
+#include<stdlib.h>
+#include<string.h>
+#include<time.h>
+
+struct broj;
+typedef struct broj* position;
+typedef struct broj
+{
+	int broj;
+	position L;
+	position D;
+}Broj;
+int Ispis(position p);
+int Generiranje(position root);
+int Rand(int min, int max);
+position Stablo(position root, int br,int brooj);
+position FindMin(position root);
+position Delete(int X, position root);
+
+int main()
+{
+	position root;
+	root = (position)malloc(sizeof(struct broj));
+	root->D = NULL;
+	root->L = NULL;
+
+	Generiranje(root);
+	Ispis(root);
+	return EXIT_SUCCESS;
+}
+
+int Generiranje(position root)
+{
+	FILE* fp = NULL;
+	fp = fopen("rand.txt","r");
+	srand(time(NULL));
+	int i;
+	int randBroj = 0;
+	int number;
+	int brooj;
+	for (i = 0; i < 5; i++)
+	{
+		randBroj = Rand(0, 10);
+		while (!feof(fp))
+		{
+			fscanf(fp,"%d",&number);
+			brooj = number;
+
+		}
+		root = Stablo(root, randBroj,brooj);
+	}
+	return EXIT_SUCCESS;
+}
+position Delete(int X, position root)
+{
+	position temp;
+
+	if (NULL == root)
+		printf("Nema ga!!!");
+	else if (X < root->broj)
+		root->L = Delete(X, root->L);
+	else if (X > root->broj)
+		root->D = Delete(X, root->D);
+	else
+	{
+		if (root->L && root->D)
+		{
+			temp = FindMin(root->D);
+			root->broj = temp->broj;
+			root->D = Delete(root->broj, root->D);
+		}
+		else
+		{
+			temp = root;
+			if (NULL == root->L)
+			{
+				root = root->L;
+			}
+			else if (NULL == root->D)
+			{
+				root = root->D;
+			}
+
+			free(temp);
+		}
+	}
+
+	return root;
+
+}
+
+
+position FindMin(position root)
+{
+	while (root->L != NULL)
+		root = root->L;
+
+	return root;
+}
+
+
+
+int Rand(int min, int max)
+{
+	int rez;
+	rez = (rand() % (max - min + 1)) + min;
+	return rez;
+}
+
+position Stablo(position root, int br,int brooj)
+{
+	if (root == NULL)
+	{
+		position q;
+		q = (position)malloc(sizeof(struct broj));
+		q->L = NULL;
+		q->D = NULL;
+		q->broj = br;
+		return q;
+	}
+	else if (root->broj > br && root->broj != brooj)
+		root->L = Stablo(root->L, br,brooj);
+	else if (root->broj < br && root->broj != brooj)
+		root->D = Stablo(root->D, br,brooj);
+	if (root->broj == brooj)
+	{
+		Delete(brooj,root);
+	}
+	return root;
+}
+
+int Ispis(position p)
+{
+	if (p != NULL)
+	{
+		printf("%d\n", p->broj);
+		Ispis(p->L);
+		Ispis(p->D);
+	}
+	return EXIT_SUCCESS;
+}

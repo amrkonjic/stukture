@@ -1,0 +1,4 @@
+﻿  Source.c
+C:\Users\ivanm\source\repos\primjer_ispita5\primjer_ispita5\Source.c(94,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\ivanm\source\repos\primjer_ispita5\primjer_ispita5\Source.c(103,31): warning C4013: 'strcmp' undefined; assuming extern returning int
+  primjer_ispita5.vcxproj -> C:\Users\ivanm\source\repos\primjer_ispita5\x64\Debug\primjer_ispita5.exe
